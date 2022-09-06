@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+/* ETIQUETAS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+}
+#body-index{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+body{
+    font-family: 'Uchen', serif, sans-serif;
+    height: 100vh;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/denim.png);
+    background-repeat: repeat;
+}
+.body-main{
+    background: rgba(0, 0, 0, 0.459);
+}
+h1{
+    color: rgb(131, 236, 255);
+    text-align: center;
+    text-shadow: -3px -3px 2px rgb(0, 0, 0);
+}
+/* WRAPPER / LOGIN - REGISTER */ 
+#wrapper-login-register{
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0rem;
+    grid-template-areas: "h1" "login" "register" ;
+    align-items: center;
+    text-align: center;
+}
+
+/* BOTONES */
+.button-29, .submit {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #81ffea 0, #32beff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer; 
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    width: 200px;
+    justify-content: center; 
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+.button-29:focus, .submit:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+.button-29:hover, .submit:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.button-29:active, .submit:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+/* Formulario */
+
+/* Wrapper Grid*/ 
+.div-iniciar-sesion{
+    grid-area: login;
+}
+.div-register{
+    grid-area: register;
+}
+#h1-index{
+    grid-area: h1;
+}
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#a-volver-index{
+    text-decoration: none;
+    color: rgb(131, 236, 255);
+    margin-top: 1rem;
+}
+input{
+    height: 2rem;
+    width: 12rem;
+    padding: 2px;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.699);
+    border: 0px;
+}
+
+/* Apartado del MAIN  */
+.textoGrande{
+    font-size: 2rem;
+    background-color: white;    
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+#h2-main{
+    text-align: center;
+}
+
+.oculto{
+    display: none;
+}
+
+
+#preguntas-frecuentes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.preguntas{
+    flex-direction: column;
+    font-size: 1.25rem;
+    width: 400px;
+    margin: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.evento1-container{
+    display: flex;
+    justify-content: center;
+}
+.evento1{
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+#buttonSi, #buttonNo, .button{
+    height: 30px;
+    width: 60px;
+    align-self: center;
+    margin: 20px 10px 0px 0px;
+}
+
+.personas{
+    background-color: white;
+    text-transform: capitalize;
+    text-align: start;
+    margin-top: 20px;
+    color:black;    
+    padding: 1rem;
+}
+
+/* container funcion agregarTurno()*/
+#containerAgregarTurno{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}    
+#buttonGuardar{
+    align-self: center;
+    width: fit-content;
+    margin: 1rem;
+    padding: 0.5rem;
+}
